@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import { FaStar, FaRegClock } from "react-icons/fa";
+import { RiMotorbikeFill } from "react-icons/ri";
 import rest1 from '../assets/img/rest1.png';
 import rest2 from '../assets/img/rest2.png';
 import rest3 from '../assets/img/rest3.png';
@@ -7,7 +9,6 @@ import rest5 from '../assets/img/rest5.png';
 import rest6 from '../assets/img/rest6.png';
 import rest7 from '../assets/img/rest7.png';
 import rest8 from '../assets/img/rest8.png';
-
 
 const photoArr = [
     { id: 1, photo: rest1 },
@@ -19,15 +20,10 @@ const photoArr = [
     { id: 7, photo: rest7 },
     { id: 8, photo: rest8 },
 ]
-
-
-
-import { FaStar, FaRegClock } from "react-icons/fa";
-import { RiMotorbikeFill } from "react-icons/ri";
 const RestaurantCard = ({ data }) => {
     return (
-        <Link to={`/restaurant/${data.id}`} className='border border-gray-300 rounded-md shadow hover:bg-gray-100 hover:shadow-lg transition'>
-            <img className='w-[400px] p-3' src={photoArr.find((item)=> data.id == item.id).photo} alt="Restaurant" />
+        <Link to={`/products/${data.id}`} className='border border-gray-300 rounded-md shadow hover:bg-gray-100 hover:shadow-lg transition'>
+            <img className='w-[400px] h-[400px] p-3' src={photoArr.find((item) => data.id == item.id).photo} alt="Restaurant" />
             <div className='border-t w-full mb-2'>
                 <div className='flex justify-between items-center px-7 py-2'>
                     <h2 className='font-semibold text-xl'>{data.name}</h2>

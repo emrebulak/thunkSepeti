@@ -1,13 +1,15 @@
 import ActionTypes from "../actionTypes"
 import api from "../../utils/api"
 
-export const getRestaurants = () => (dispatch) => {
+export const getRestaurants = (restId) => (dispatch) => {
 
     dispatch({
         type: ActionTypes.REST_LOADING
     });
 
-    api.get("/restaurants")
+    const url = restId ? `/restaurants/${restId}` : "/restaurants";
+
+    api.get(url)
         .then((response) =>
             dispatch({
                 type: ActionTypes.REST_SUCCESS,
