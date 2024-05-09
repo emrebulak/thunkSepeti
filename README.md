@@ -1,4 +1,4 @@
-<img src="./src/assets/images/animation.gif" alt="Thunk Sepeti">
+<img src="./src/assets/img/animation.gif" alt="Thunk Sepeti">
 
 # Thunk Sepeti Projesi (TR)
 
