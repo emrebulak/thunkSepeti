@@ -18,8 +18,6 @@ const Main = () => {
     handleRestaurants();
   }, []);
 
-  console.log("Değerler : ", state);
-
   if (state.isLoading) {
     return <Loader />;
   }

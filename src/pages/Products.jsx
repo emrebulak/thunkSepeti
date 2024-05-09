@@ -46,7 +46,7 @@ const Products = () => {
 
         <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-5">
           {productState.products.map((item) => (
-            <ProductCard key={item.id} data={item} />
+            <ProductCard key={item.id} data={item} restaurant={restaurantState.restaurants} />
           ))}
         </div>
       </Container>

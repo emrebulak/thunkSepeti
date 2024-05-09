@@ -297,39 +297,21 @@
   ],
   "cart": [
     {
-      "id": "694fb7bc-d49b-4c16-907d-1db9563b1227",
-      "productId": "42",
+      "id": "7ab5e1fd-05ba-43cb-b51f-32561707d9d8",
+      "productId": "2",
       "title": "Margarita Pizza",
       "price": 12.99,
       "photo": "https://static.vecteezy.com/system/resources/previews/026/850/474/original/margherita-pizza-transparent-png.png",
       "restaurantName": "Aromalı Ev",
-      "amount": 1
+      "amount": 4
     },
     {
-      "id": "18b6be28-6b5a-4864-b61f-e660bb362e23",
+      "id": "212e5207-18d7-4116-ba16-6625d85511cf",
       "productId": "12",
       "title": "Çıtır Tavuk Kanadı",
       "price": 9.99,
       "photo": "https://www.kanatcihaydar.com.tr/_content/index/slider/slide4-p1.png",
       "restaurantName": "Aromalı Ev",
-      "amount": 1
-    },
-    {
-      "id": "b7828acd-36d7-4a61-9b60-729a7474b8fa",
-      "productId": "1",
-      "title": "Izgara Somon",
-      "price": 45.99,
-      "photo": "https://png.pngtree.com/png-vector/20240124/ourmid/pngtree-grilled-salmon-food-png-image_11484296.png",
-      "restaurantName": "Lezzetin Tadı",
-      "amount": 3
-    },
-    {
-      "id": "3cf7cc43-c614-4c21-8a89-fec8b5f1de64",
-      "productId": "3",
-      "title": "Tavuk Kebabı",
-      "price": 17.99,
-      "photo": "https://png.pngtree.com/png-clipart/20230502/original/pngtree-ginger-chicken-kabob-on-isloated-transparent-background-png-image_9133349.png",
-      "restaurantName": "Lezzetin Tadı",
       "amount": 1
     }
   ]

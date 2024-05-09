@@ -19,8 +19,19 @@ const basketReducer = (state = initialState, action) => {
         error: false,
         basket: action.payload,
       }
-      default:
-        return state
+    case ActionTypes.CART_ADD:
+      return { ...state, isLoading: false, error: false, basket: [action.payload, ...state.basket] }
+
+    case ActionTypes.CART_UPDATE:
+      const updated = state.basket.map((i) => i.id == action.payload.id ? action.payload : i);
+      return { ...state, isLoading: false, error: false, basket: updated }
+
+    case ActionTypes.CART_DELETE:
+      const deleted = state.basket.filter((i) => i.id != action.payload);
+      return { ...state, isLoading: false, error: false, basket: deleted }
+
+    default:
+      return state
   }
 }
 
